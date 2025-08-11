@@ -1,0 +1,30 @@
+Network Traffic Analysis Report
+=================================
+Objective:
+Capture live network packets and identify basic protocols and traffic types.
+
+Tools Used:
+- Wireshark (free, open-source network protocol analyzer)
+
+Summary of Process:
+1. Installed Wireshark.
+2. Started capturing packets on the active network interface (Wi-Fi/Ethernet).
+3. Generated network traffic by browsing websites and performing online searches.
+4. Stopped capture after ~1 minute.
+5. Filtered packets by specific protocols (HTTP, DNS, TCP, TLS, UDP).
+6. Identified multiple protocols from the capture.
+
+Protocols Identified:
+- DNS (Domain Name System): Used for translating domain names into IP addresses.
+- TCP (Transmission Control Protocol): Connection-oriented protocol for reliable data transfer.
+- TLS (Transport Layer Security): Provides encryption for HTTPS traffic.
+- UDP (User Datagram Protocol): Used for faster, connectionless communication (e.g., streaming).
+- HTTP (Hypertext Transfer Protocol): Used for unencrypted web traffic.
+
+Example Packet Details:
+- DNS Query: example.com -> Response: IP address returned.
+- TCP Connection: Client port 53214 to server port 443 (HTTPS).
+- TLS Handshake: Exchange of certificates for encryption setup.
+
+Outcome:
+Hands-on packet analysis experience, with improved understanding of how different protocols operate in real network communication.
